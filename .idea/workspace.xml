@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d91d8594-cdfb-4bc7-b1c3-41a56c5f6cf9" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,39 +17,97 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1jJPLJIvzB3ICWfXTxfHP0cN758" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.BuyTest">
+    <configuration name="Test" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Testing" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BuyTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testing_citilink" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.BuyTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CityTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testing_citilink" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CityTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testing_citilink" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
+        <item itemvalue="TestNG.BuyTest" />
+        <item itemvalue="TestNG.CityTest" />
+        <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -60,5 +120,27 @@
       <updated>1603519165041</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1153" height="227" key="GridCell.Tab.0.bottom" timestamp="1605204282325">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1153" height="227" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1605204282325" />
+    <state width="1153" height="227" key="GridCell.Tab.0.center" timestamp="1605204282325">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1153" height="227" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1605204282325" />
+    <state width="1153" height="227" key="GridCell.Tab.0.left" timestamp="1605204282325">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1153" height="227" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1605204282325" />
+    <state width="1153" height="227" key="GridCell.Tab.0.right" timestamp="1605204282325">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1153" height="227" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1605204282325" />
+    <state x="660" y="288" key="SettingsEditor" timestamp="1605187924477">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="660" y="288" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1605187924477" />
   </component>
 </project>
