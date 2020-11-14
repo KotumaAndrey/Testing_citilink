@@ -6,3 +6,8 @@
 [1107/113458.843:ERROR:directory_reader_win.cc(43)] FindFirstFile: ??????? ?? ??????? ????? ????????? ????. (0x3)
 [1107/120759.654:ERROR:directory_reader_win.cc(43)] FindFirstFile: ??????? ?? ??????? ????? ????????? ????. (0x3)
 [1112/180733.168:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1114/114403.431:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1114/115623.570:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1114/115727.087:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1114/124315.998:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1114/170626.803:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
