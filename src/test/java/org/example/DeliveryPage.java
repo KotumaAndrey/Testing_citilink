@@ -16,21 +16,21 @@ public class DeliveryPage {
     private By cityNameCheck = By.className("popup_close");
     private By cityDeliveryFind = By.cssSelector("#content > div > div > h1:nth-child(1) > span");
     private By deliveryPage = By.cssSelector("#layout > header > div > div:nth-child(1) > div > div.header_inner__section-list > div:nth-child(5) > a");
-    private String cityName = "Курск";
 
-    public void ChangeCity() {
+
+    public void ChangeCity(String cityname) {
         driver.findElement(userMenu).click();
-        driver.findElement(By.partialLinkText(cityName)).click();
+        driver.findElement(By.partialLinkText(cityname)).click();
     }
 
-    public void CheckChange() {
-        Assert.assertEquals(cityName, driver.findElement(cityNameCheck).getText());
+    public void CheckChange(String cityname) {
+        Assert.assertEquals(cityname, driver.findElement(cityNameCheck).getText());
     }
 
-    public void CheckDelivery() {
+    public void CheckDelivery(String cityname) {
         driver.findElement(deliveryPage).click();
         String name = driver.findElement(cityDeliveryFind).getText();
-        Assert.assertEquals(name.contains(cityName), true);
+        Assert.assertEquals(name.contains(cityname), true);
     }
 
 }

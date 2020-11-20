@@ -101,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BuyTest" />
         <item itemvalue="TestNG.CityTest" />
+        <item itemvalue="TestNG.BuyTest" />
         <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
@@ -122,22 +122,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="970" height="253" key="GridCell.Tab.0.bottom" timestamp="1605366871155">
+    <state x="104" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605858725143">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="970" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1605366871155" />
-    <state width="970" height="253" key="GridCell.Tab.0.center" timestamp="1605366871155">
+    <state x="104" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1605858725143" />
+    <state width="1248" height="278" key="GridCell.Tab.0.bottom" timestamp="1605858728168">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="970" height="253" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1605366871155" />
-    <state width="970" height="253" key="GridCell.Tab.0.left" timestamp="1605366871154">
+    <state width="1248" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1605858728168" />
+    <state width="1248" height="278" key="GridCell.Tab.0.center" timestamp="1605858728152">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="970" height="253" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1605366871154" />
-    <state width="970" height="253" key="GridCell.Tab.0.right" timestamp="1605366871155">
+    <state width="1248" height="278" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1605858728152" />
+    <state width="1248" height="278" key="GridCell.Tab.0.left" timestamp="1605858728152">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="970" height="253" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1605366871155" />
+    <state width="1248" height="278" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1605858728152" />
+    <state width="1248" height="278" key="GridCell.Tab.0.right" timestamp="1605858728152">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1248" height="278" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1605858728152" />
     <state x="660" y="288" key="SettingsEditor" timestamp="1605187924477">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
