@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-21T10:01:49Z" name="Command line suite" finished-at="2020-11-21T10:03:35Z" duration-ms="105531">
+    <groups>
+    </groups>
+    <test started-at="2020-11-21T10:01:49Z" name="Command line test" finished-at="2020-11-21T10:03:35Z" duration-ms="105531">
+      <class name="org.example.BuyTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.example.BuyTest@bef2d72]" started-at="2020-11-21T10:01:49Z" name="setup" finished-at="2020-11-21T10:02:04Z" duration-ms="14647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="priceTest()[pri:0, instance:org.example.BuyTest@bef2d72]" started-at="2020-11-21T10:02:04Z" name="priceTest" finished-at="2020-11-21T10:02:31Z" duration-ms="26820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priceTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.BuyTest@bef2d72]" started-at="2020-11-21T10:02:31Z" name="tearDown" finished-at="2020-11-21T10:02:32Z" duration-ms="1002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.BuyTest -->
+      <class name="org.example.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.example.LoginTest@22a637e7]" started-at="2020-11-21T10:03:03Z" name="setup" finished-at="2020-11-21T10:03:16Z" duration-ms="12635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:org.example.LoginTest@22a637e7]" started-at="2020-11-21T10:03:16Z" name="loginTest" finished-at="2020-11-21T10:03:34Z" duration-ms="17959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.LoginTest@22a637e7]" started-at="2020-11-21T10:03:34Z" name="tearDown" finished-at="2020-11-21T10:03:35Z" duration-ms="946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.LoginTest -->
+      <class name="org.example.CityTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.example.CityTest@69b2283a]" started-at="2020-11-21T10:02:32Z" name="setup" finished-at="2020-11-21T10:02:44Z" duration-ms="12722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="cityTest()[pri:0, instance:org.example.CityTest@69b2283a]" started-at="2020-11-21T10:02:44Z" name="cityTest" finished-at="2020-11-21T10:03:02Z" duration-ms="17750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.CityTest@69b2283a]" started-at="2020-11-21T10:03:02Z" name="tearDown" finished-at="2020-11-21T10:03:03Z" duration-ms="1019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.CityTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

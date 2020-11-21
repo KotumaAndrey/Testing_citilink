@@ -25,7 +25,7 @@ public class CityTest {
     }
 
     @Test
-    public void cityTest() {
+    public void cityTest(){
         cityPage.ChangeCity("Курск");
         cityPage.CheckChange("Курск");
         cityPage.CheckDelivery("Курск");

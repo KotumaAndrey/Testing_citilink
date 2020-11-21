@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class BasketPage {
@@ -13,15 +15,15 @@ public class BasketPage {
         this.driver = drivers;
     }
 
-    private By brush_price = By.cssSelector("#content > div > div.cart_list.order_page_block > table > tbody:nth-child(3) > tr.cart_item.cart_item_1432126__js > td.price > span > ins.num");
-    private By basket_price = By.cssSelector("#layout > div.main_content > div > aside > div > div > div:nth-child(2) > div > p:nth-child(1) > span.price.cart_cost > ins.num.order_amount_field");
-    private By count_change = By.cssSelector("#product_1432126");
+    private By brush_price = By.cssSelector(".cart_item.cart_item_705901__js td span.price ins.num");
+    private By basket_price = By.cssSelector(".payment_block p span ins.num.order_amount_field");
+    private By count_change = By.cssSelector("#product_705901");
     private int one_brush;
     private int count = 2;
 
 
-    public void CheckPrice()
-    {
+    public void CheckPrice() {
+
         Assert.assertEquals(true, Integer.parseInt(driver.findElement(brush_price).getText()) == Integer.parseInt(driver.findElement(basket_price).getText()));
     }
 
