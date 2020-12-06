@@ -1,4 +1,4 @@
-package org.example;
+package org.example.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +21,7 @@ public class LoginPage {
     private By loginField = By.id("login");
     private By passwdField = By.id("pass");
 
-    public void InButton(){
+    public void inButton(){
         driver.findElement(By.id("login_form_show_js")).click();}
     public void inputLogin(String login) {
         driver.findElement(loginField).click();

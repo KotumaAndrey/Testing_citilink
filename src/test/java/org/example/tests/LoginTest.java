@@ -1,5 +1,10 @@
-package org.example;
+package org.example.tests;
 
+
+
+import org.example.ConfProperties;
+import org.example.pages.ProfilePage;
+import org.example.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -9,8 +14,9 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class CityTest {
-    DeliveryPage cityPage;
+public class LoginTest {
+    LoginPage loginPage;
+    ProfilePage profilePage;
     WebDriver driver;
 
     @BeforeClass
@@ -21,19 +27,18 @@ public class CityTest {
         driver.get(ConfProperties.getProperty("loginpage"));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        cityPage = new DeliveryPage(driver);
+        loginPage = new LoginPage(driver);
+        profilePage = new ProfilePage(driver);
     }
-
     @Test
-    public void cityTest(){
-        cityPage.ChangeCity("Курск");
-        cityPage.CheckChange("Курск");
-        cityPage.CheckDelivery("Курск");
-        cityPage.ChangeCity("Киров");
-        cityPage.CheckChange("Киров");
-        cityPage.CheckDelivery("Киров");
+    public void loginTest() throws InterruptedException {
+        loginPage.inButton();
+        loginPage.inputLogin(ConfProperties.getProperty("login"));
+        loginPage.inputPasswd(ConfProperties.getProperty("password"));
+        Thread.sleep(10000);
+        loginPage.clickLoginBtn();
+        Assert.assertEquals("Андрей", profilePage.getUserName());
     }
-
     @AfterClass
     public void tearDown() {
         driver.quit();

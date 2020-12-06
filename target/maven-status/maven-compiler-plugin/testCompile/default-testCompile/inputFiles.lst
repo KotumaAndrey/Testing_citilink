@@ -1,9 +1,9 @@
-C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\BuyTest.java
+C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\pages\SearchPage.java
+C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\tests\BuyTest.java
 C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\ConfProperties.java
-C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\BasketPage.java
-C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\CityTest.java
-C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\LoginPage.java
-C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\ProfilePage.java
-C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\LoginTest.java
-C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\SearchPage.java
-C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\DeliveryPage.java
+C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\pages\LoginPage.java
+C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\pages\ProfilePage.java
+C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\tests\LoginTest.java
+C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\pages\DeliveryPage.java
+C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\tests\CityTest.java
+C:\Users\Admin\Documents\Testing_citilink\src\test\java\org\example\pages\BasketPage.java

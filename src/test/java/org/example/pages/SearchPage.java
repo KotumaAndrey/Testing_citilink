@@ -1,4 +1,4 @@
-package org.example;
+package org.example.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -28,13 +28,13 @@ public class SearchPage {
     private By go_basket = By.cssSelector(".pretty_button.type4.pretty_button_link.popup-basket__action-btn.js--popup-basket__action-btn_checkout");
 
 
-    public void OpenCatalog(){
+    public void openCatalog(){
         driver.findElement(catalog_1).click();
         driver.findElement(catalog_2).click();
         driver.get(catalog_3);
     }
 
-    public void FindByCost() throws InterruptedException {
+    public void findByCost() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.presenceOfElementLocated(menu));
         WebElement minima = driver.findElement(min);
@@ -51,20 +51,20 @@ public class SearchPage {
         Thread.sleep(3000);
     }
 
-    public void CheckPrices()
+    public void checkPrices()
     {
         for ( WebElement x: driver.findElements(costs)) {
             Assert.assertEquals(true, Integer.parseInt(x.getText()) <= 1999 && Integer.parseInt(x.getText()) > 999);
         }
     }
 
-    public void TakePrelast()
+    public void takePrelast()
     {
         int count = driver.findElements(basket).size();
         driver.findElements(basket).get(count - 2).click();
     }
 
-    public void ToBasket()
+    public void toBasket()
     {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.presenceOfElementLocated(go_basket));

@@ -1,5 +1,8 @@
-package org.example;
+package org.example.tests;
 
+import org.example.ConfProperties;
+import org.example.pages.SearchPage;
+import org.example.pages.BasketPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -27,16 +30,17 @@ public class BuyTest {
 
     @Test
     public void priceTest() throws InterruptedException {
-        searchPage.OpenCatalog();
-        searchPage.FindByCost();
-        searchPage.CheckPrices();
-        searchPage.TakePrelast();
-        searchPage.ToBasket();
-        basketPage.CheckPrice();
-        basketPage.AddOne();
-        basketPage.DoPriceMore();
-        basketPage.CheckPrice();
-        basketPage.CheckSummary();
+        searchPage.openCatalog();
+        searchPage.findByCost();
+        searchPage.checkPrices();
+        searchPage.takePrelast();
+        searchPage.toBasket();
+        basketPage.checkPrice();
+        basketPage.addOne();
+        basketPage.doPriceMore();
+        basketPage.checkPrice();
+        basketPage.checkSummary();
+        // allure serve /C/Users/Admin/Documents/Testing_citilink/target/surefire-reports/
     }
 
     @AfterClass

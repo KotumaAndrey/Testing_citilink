@@ -1,4 +1,4 @@
-package org.example;
+package org.example.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -22,12 +22,12 @@ public class BasketPage {
     private int count = 2;
 
 
-    public void CheckPrice() {
+    public void checkPrice() {
 
         Assert.assertEquals(true, Integer.parseInt(driver.findElement(brush_price).getText()) == Integer.parseInt(driver.findElement(basket_price).getText()));
     }
 
-    public void AddOne()
+    public void addOne()
     {
         one_brush = Integer.parseInt(driver.findElement(brush_price).getText());
         WebElement changer_count = driver.findElement(count_change);
@@ -36,7 +36,7 @@ public class BasketPage {
         changer_count.sendKeys(String.valueOf(count));
     }
 
-    public void DoPriceMore() throws InterruptedException {
+    public void doPriceMore() throws InterruptedException {
         while (count * one_brush < 2999)
         {
             count++;
@@ -49,7 +49,7 @@ public class BasketPage {
         Assert.assertEquals(true, Integer.parseInt(driver.findElement(brush_price).getText()) > 2999);
     }
 
-    public void CheckSummary()
+    public void checkSummary()
     {
         Assert.assertEquals(one_brush * count, Integer.parseInt(driver.findElement(basket_price).getText()));
     }

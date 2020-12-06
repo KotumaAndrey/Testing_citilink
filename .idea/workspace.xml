@@ -53,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -64,8 +64,10 @@
       <command value=" mvn '-Dtest=de.mypackage.*Test' test" />
       <command value="mvn test" />
       <command value="mvn --version" />
-      <command value="mvn clean test" />
       <command value="mvn -v" />
+      <command value="allure serve pathToAllureResultsFolder" />
+      <command value="allure --version" />
+      <command value="mvn clean test" />
     </option>
   </component>
   <component name="RunManager" selected="TestNG.BuyTest">
@@ -73,12 +75,12 @@
       <module name="Testing_citilink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.BuyTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.BuyTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -90,12 +92,12 @@
       <module name="Testing_citilink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CityTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.CityTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -107,12 +109,12 @@
       <module name="Testing_citilink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.LoginTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -161,29 +163,29 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="104" y="195" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1605859238982" />
-    <state width="1275" height="272" key="GridCell.Tab.0.bottom" timestamp="1605953037303">
+    <state width="1091" height="272" key="GridCell.Tab.0.bottom" timestamp="1607242491057">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1275" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1605953037303" />
-    <state width="1275" height="272" key="GridCell.Tab.0.center" timestamp="1605953037303">
+    <state width="1091" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1607242491057" />
+    <state width="1091" height="272" key="GridCell.Tab.0.center" timestamp="1607242491057">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1275" height="272" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1605953037303" />
-    <state width="1275" height="272" key="GridCell.Tab.0.left" timestamp="1605953037302">
+    <state width="1091" height="272" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1607242491057" />
+    <state width="1091" height="272" key="GridCell.Tab.0.left" timestamp="1607242491057">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1275" height="272" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1605953037302" />
-    <state width="1275" height="272" key="GridCell.Tab.0.right" timestamp="1605953037303">
+    <state width="1091" height="272" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1607242491057" />
+    <state width="1091" height="272" key="GridCell.Tab.0.right" timestamp="1607242491057">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1275" height="272" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1605953037303" />
-    <state x="144" y="190" key="SettingsEditor" timestamp="1605940267016">
+    <state width="1091" height="272" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1607242491057" />
+    <state x="144" y="190" key="SettingsEditor" timestamp="1607239628015">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="144" y="190" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1605940267016" />
-    <state x="196" y="283" width="672" height="677" key="run.anything.popup" timestamp="1605952894533">
+    <state x="144" y="190" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1607239628015" />
+    <state x="196" y="283" width="672" height="677" key="run.anything.popup" timestamp="1607239814111">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="196" y="283" width="672" height="677" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1605952894533" />
+    <state x="196" y="283" width="672" height="677" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1607239814111" />
   </component>
 </project>

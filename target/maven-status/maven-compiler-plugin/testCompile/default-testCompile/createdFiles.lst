@@ -1,9 +1,9 @@
-org\example\BasketPage.class
-org\example\CityTest.class
 org\example\ConfProperties.class
-org\example\DeliveryPage.class
-org\example\LoginPage.class
-org\example\SearchPage.class
-org\example\LoginTest.class
-org\example\BuyTest.class
-org\example\ProfilePage.class
+org\example\tests\BuyTest.class
+org\example\pages\LoginPage.class
+org\example\pages\BasketPage.class
+org\example\pages\DeliveryPage.class
+org\example\pages\ProfilePage.class
+org\example\pages\SearchPage.class
+org\example\tests\LoginTest.class
+org\example\tests\CityTest.class

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,16 +18,16 @@ public class DeliveryPage {
     private By deliveryPage = By.cssSelector("[data-link-type = \"Delivery\"] a");
 
 
-    public void ChangeCity(String cityname) {
+    public void changeCity(String cityname) {
         driver.findElement(userMenu).click();
         driver.findElement(By.partialLinkText(cityname)).click();
     }
 
-    public void CheckChange(String cityname) {
+    public void checkChange(String cityname) {
         Assert.assertEquals(cityname, driver.findElement(cityNameCheck).getText());
     }
 
-    public void CheckDelivery(String cityname) {
+    public void checkDelivery(String cityname) {
         driver.findElement(deliveryPage).click();
         String name = driver.findElement(cityDeliveryFind).getText();
         Assert.assertEquals(name.contains(cityname), true);
