@@ -40,7 +40,7 @@ public class BuyTest {
         basketPage.doPriceMore();
         basketPage.checkPrice();
         basketPage.checkSummary();
-        // allure serve /C/Users/Admin/Documents/Testing_citilink/target/surefire-reports/
+        // allure serve /C:/Users/Admin/Documents/Testing_citilink/target/surefire-reports/
     }
 
     @AfterClass
