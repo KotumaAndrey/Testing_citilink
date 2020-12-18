@@ -15,9 +15,9 @@ public class BasketPage {
         this.driver = drivers;
     }
 
-    private By brush_price = By.cssSelector(".cart_item.cart_item_705901__js td span.price ins.num");
+    private By brush_price = By.cssSelector(".cart_item.cart_item_1429647__js td span.price ins.num");
     private By basket_price = By.cssSelector(".payment_block p span ins.num.order_amount_field");
-    private By count_change = By.cssSelector("#product_705901");
+    private By count_change = By.cssSelector(".product_amount_control");
     private int one_brush;
     private int count = 2;
 

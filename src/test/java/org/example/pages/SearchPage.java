@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.util.Collection;
-import java.util.concurrent.TimeUnit;
+import java.util.List;
+
 
 public class SearchPage {
     public WebDriver driver;
@@ -23,7 +23,7 @@ public class SearchPage {
     private By menu = By.cssSelector(".section3");
     private By min = By.cssSelector(".min.min-input_js");
     private By max = By.cssSelector(".max.max-input_js");
-    private By costs = By.cssSelector(".subcategory-product-item__price.subcategory-product-item__price_standart ins.subcategory-product-item__price-num");
+    private By costs = By.cssSelector("span.subcategory-product-item__price.subcategory-product-item__price_standart ins.subcategory-product-item__price-num");
     private By basket = By.cssSelector(".add_to_cart.pretty_button.type4.add_to_cart_text_for_user");
     private By go_basket = By.cssSelector(".pretty_button.type4.pretty_button_link.popup-basket__action-btn.js--popup-basket__action-btn_checkout");
 
@@ -41,27 +41,29 @@ public class SearchPage {
         minima.click();
         //Clear doesn't work and we use the combination of keys
         minima.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
-        minima.sendKeys("999");
+        minima.sendKeys("999", Keys.ENTER);
         //Waiting reload of filters
-        Thread.sleep(3000);
         WebElement maxima = driver.findElement(max);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#filter-loader-animation[style =\"display: block;\"]")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#filter-loader-animation[style =\"display: none;\"]")));
         maxima.click();
         maxima.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
-        maxima.sendKeys("1999");
-        Thread.sleep(3000);
+        maxima.sendKeys("1999", Keys.ENTER);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#filter-loader-animation[style =\"display: block;\"]")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#filter-loader-animation[style =\"display: none;\"]")));
     }
 
     public void checkPrices()
     {
         for ( WebElement x: driver.findElements(costs)) {
-            Assert.assertEquals(true, Integer.parseInt(x.getText()) <= 1999 && Integer.parseInt(x.getText()) > 999);
+            Assert.assertEquals(true, Integer.parseInt(x.getText()) <= 1999 && Integer.parseInt(x.getText()) >= 999);
         }
     }
 
     public void takePrelast()
     {
-        int count = driver.findElements(basket).size();
-        driver.findElements(basket).get(count - 2).click();
+        List<WebElement> baskets = driver.findElements(basket);
+        baskets.get(baskets.size() - 2).click();
     }
 
     public void toBasket()

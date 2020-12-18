@@ -72,7 +72,7 @@
       <command value="mvn clean test allure:serve" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BuyTest">
+  <component name="RunManager" selected="TestNG.CityTest">
     <configuration name="BuyTest" type="TestNG" nameIsGenerated="true">
       <module name="Testing_citilink" />
       <extension name="coverage">
@@ -165,22 +165,26 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="104" y="195" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1605859238982" />
-    <state width="1091" height="272" key="GridCell.Tab.0.bottom" timestamp="1607249497621">
+    <state x="100" y="144" width="1272" height="897" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1607758884881">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1091" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1607249497621" />
-    <state width="1091" height="272" key="GridCell.Tab.0.center" timestamp="1607249497621">
+    <state x="100" y="144" width="1272" height="897" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1607758884881" />
+    <state width="971" height="276" key="GridCell.Tab.0.bottom" timestamp="1608299240478">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1091" height="272" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1607249497621" />
-    <state width="1091" height="272" key="GridCell.Tab.0.left" timestamp="1607249497621">
+    <state width="971" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1608299240478" />
+    <state width="971" height="276" key="GridCell.Tab.0.center" timestamp="1608299240478">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1091" height="272" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1607249497621" />
-    <state width="1091" height="272" key="GridCell.Tab.0.right" timestamp="1607249497621">
+    <state width="971" height="276" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1608299240478" />
+    <state width="971" height="276" key="GridCell.Tab.0.left" timestamp="1608299240478">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1091" height="272" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1607249497621" />
+    <state width="971" height="276" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1608299240478" />
+    <state width="971" height="276" key="GridCell.Tab.0.right" timestamp="1608299240478">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="971" height="276" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1608299240478" />
     <state x="144" y="190" key="SettingsEditor" timestamp="1607239628015">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
