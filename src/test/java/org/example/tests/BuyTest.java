@@ -1,20 +1,26 @@
 package org.example.tests;
 
+import io.qameta.allure.*;
 import org.example.ConfProperties;
+import org.example.TestListener;
 import org.example.pages.SearchPage;
 import org.example.pages.BasketPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class BuyTest {
+@Listeners({TestListener.class})
+@Epic("Citilink Tests")
+@Feature("Buy Test")
+
+public class BuyTest extends BaseTest{
     SearchPage searchPage;
     BasketPage basketPage;
-    WebDriver driver;
 
     @BeforeClass
     public void setup()
@@ -28,7 +34,9 @@ public class BuyTest {
         basketPage = new BasketPage(driver);
     }
 
-    @Test
+    @Test(priority = 1, description = "Invalid Scenario in dding to basket and filtration by cost")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Test Description: Failure with adding thing to basket or fining by filtration.")
     public void priceTest() throws InterruptedException {
         searchPage.openCatalog();
         searchPage.findByCost();

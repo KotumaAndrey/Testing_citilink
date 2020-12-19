@@ -1,5 +1,6 @@
 package org.example.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +18,7 @@ public class ProfilePage {
     private By userMenu = By.cssSelector(".auth-user-popup__text.dropdown__toggle span");
 
 
-
+    @Step("Get username after authorisation.")
     public String getUserName() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".auth-user-popup__text.dropdown__toggle")));

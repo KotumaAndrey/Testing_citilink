@@ -1,28 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 139.327 s <<< FAILURE! - in TestSuite
-priceTest(org.example.tests.BuyTest)  Time elapsed: 8.193 s  <<< FAILURE!
-org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=87.0.4280.88)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ANDREY', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: c:\temp\scoped_dir11176_308...}, goog:chromeOptions: {debuggerAddress: localhost:63621}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 07df202628dca39ea3747b146d3e1928
-*** Element info: {Using=css selector, value=[href="https://www.citilink.ru/catalog/beauty_and_health/toothbrushes_and_aks/"]}
-	at org.example.tests.BuyTest.priceTest(BuyTest.java:33)
-
-loginTest(org.example.tests.LoginTest)  Time elapsed: 22.69 s  <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=87.0.4280.88)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ANDREY', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: c:\temp\scoped_dir12328_207...}, goog:chromeOptions: {debuggerAddress: localhost:63882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 23c1f50bdf7971da625a4b92d18d8500
-	at org.example.tests.LoginTest.loginTest(LoginTest.java:36)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 173.412 s - in TestSuite

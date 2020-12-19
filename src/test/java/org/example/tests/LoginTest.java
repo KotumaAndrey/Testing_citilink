@@ -2,7 +2,9 @@ package org.example.tests;
 
 
 
+import io.qameta.allure.*;
 import org.example.ConfProperties;
+import org.example.TestListener;
 import org.example.pages.ProfilePage;
 import org.example.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
@@ -10,14 +12,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class LoginTest {
+@Listeners({TestListener.class})
+@Epic("Citilink Tests")
+@Feature("Login Test")
+
+public class LoginTest extends BaseTest{
     LoginPage loginPage;
     ProfilePage profilePage;
-    WebDriver driver;
 
     @BeforeClass
     public void setup()
@@ -30,7 +36,9 @@ public class LoginTest {
         loginPage = new LoginPage(driver);
         profilePage = new ProfilePage(driver);
     }
-    @Test
+    @Test(priority = 0, description = "Invalid Scenario in Login form")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Test Description: Login test with wrong username and wrong password.")
     public void loginTest() throws InterruptedException {
         loginPage.inButton();
         loginPage.inputLogin(ConfProperties.getProperty("login"));

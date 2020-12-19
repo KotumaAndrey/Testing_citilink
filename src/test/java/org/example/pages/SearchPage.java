@@ -1,5 +1,6 @@
 package org.example.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -27,13 +28,14 @@ public class SearchPage {
     private By basket = By.cssSelector(".add_to_cart.pretty_button.type4.add_to_cart_text_for_user");
     private By go_basket = By.cssSelector(".pretty_button.type4.pretty_button_link.popup-basket__action-btn.js--popup-basket__action-btn_checkout");
 
-
+    @Step("Go to catalog with toothbrushes.")
     public void openCatalog(){
         driver.findElement(catalog_1).click();
         driver.findElement(catalog_2).click();
         driver.get(catalog_3);
     }
 
+    @Step("Filter toothbrushes by cost from 999 to 1999")
     public void findByCost() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.presenceOfElementLocated(menu));
@@ -53,6 +55,7 @@ public class SearchPage {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#filter-loader-animation[style =\"display: none;\"]")));
     }
 
+    @Step("Check that prices is right after filtration")
     public void checkPrices()
     {
         for ( WebElement x: driver.findElements(costs)) {
@@ -60,12 +63,14 @@ public class SearchPage {
         }
     }
 
+    @Step("Take prelate toothbrush")
     public void takePrelast()
     {
         List<WebElement> baskets = driver.findElements(basket);
         baskets.get(baskets.size() - 2).click();
     }
 
+    @Step("Add toothbrush to basket.")
     public void toBasket()
     {
         WebDriverWait wait = new WebDriverWait(driver, 10);

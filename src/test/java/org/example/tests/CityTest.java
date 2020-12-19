@@ -1,19 +1,21 @@
 package org.example.tests;
 
+import io.qameta.allure.*;
 import org.example.ConfProperties;
+import org.example.TestListener;
 import org.example.pages.DeliveryPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
-public class CityTest {
+@Listeners({TestListener.class})
+@Epic("Citilink Tests")
+@Feature("City Test")
+
+public class CityTest extends BaseTest{
     DeliveryPage cityPage;
-    WebDriver driver;
 
     @BeforeClass
     public void setup()
@@ -35,7 +37,9 @@ public class CityTest {
         };
     }
 
-    @Test(dataProvider = "cityChange")
+    @Test(priority = 1, description = "Invalid Scenario in Change-city form", dataProvider = "cityChange")
+    @Severity(SeverityLevel.MINOR)
+    @Description("Test Description: Changing city works wrong.")
     public void cityTest(String city){
         cityPage.changeCity(city);
         cityPage.checkChange(city);

@@ -1,5 +1,6 @@
 package org.example.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,15 +22,27 @@ public class LoginPage {
     private By loginField = By.id("login");
     private By passwdField = By.id("pass");
 
+    @Step("Open LoginForm")
     public void inButton(){
-        driver.findElement(By.id("login_form_show_js")).click();}
+        driver.findElement(By.id("login_form_show_js")).click();
+    }
+
+    @Step("Input login in loginform")
     public void inputLogin(String login) {
         driver.findElement(loginField).click();
-        driver.findElement(loginField).sendKeys(login); }
+        driver.findElement(loginField).sendKeys(login);
+    }
+
+    @Step("Input password to loginform")
     public void inputPasswd(String passwd) {
         driver.findElement(passwdField).click();
-        driver.findElement(passwdField).sendKeys(passwd); }
+        driver.findElement(passwdField).sendKeys(passwd);
+    }
+
+    @Step("Click button to loginning in system")
     public void clickLoginBtn() {
-        driver.findElement(LoginForm).submit(); }
+        driver.findElement(LoginForm).submit();
+    }
+
 
 }

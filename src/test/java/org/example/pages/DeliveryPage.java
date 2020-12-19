@@ -1,5 +1,6 @@
 package org.example.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,15 +19,18 @@ public class DeliveryPage {
     private By deliveryPage = By.cssSelector("[data-link-type = \"Delivery\"] a");
 
 
+    @Step("Change city to cityname {0}")
     public void changeCity(String cityname) {
         driver.findElement(userMenu).click();
         driver.findElement(By.partialLinkText(cityname)).click();
     }
 
+    @Step("Check change to cityname {0}")
     public void checkChange(String cityname) {
         Assert.assertEquals(cityname, driver.findElement(cityNameCheck).getText());
     }
 
+    @Step("Check deliverypage by cityname {0}")
     public void checkDelivery(String cityname) {
         driver.findElement(deliveryPage).click();
         String name = driver.findElement(cityDeliveryFind).getText();
